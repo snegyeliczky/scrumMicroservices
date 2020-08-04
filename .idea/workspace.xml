@@ -1,7 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5dcb941b-f8dc-4bbf-87a7-84ec358146f4" name="Default Changelist" comment="" />
+    <list default="true" id="5dcb941b-f8dc-4bbf-87a7-84ec358146f4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_vintage_junit_vintage_engine_5_6_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_junit_jupiter_3_4_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/company-service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/company-service/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/company-service/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/company-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/company-service/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/company-service/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/company-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/company-service/src/main/java/com/codecool/companyservice/CompanyServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/company-service/src/main/java/com/codecool/companyservice/conroller/CompanyController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/company-service/src/main/java/com/codecool/companyservice/model/ProjectData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/company-service/src/main/java/com/codecool/companyservice/service/ProjectServiceCaller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/company-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-services/src/main/java/com/codecool/projectservices/controller/ProjectController.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-services/src/main/java/com/codecool/projectservices/controller/ProjectController.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,32 +48,6 @@
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="scrum@localhost" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="scrum@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="scrum@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="scrum: database" type="162271b6:PgImplModel$Database" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="scrum@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="scrum: database" type="162271b6:PgImplModel$Database" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="scrum@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="scrum: database" type="162271b6:PgImplModel$Database" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
       </path>
     </expand>
     <select />
@@ -71,19 +71,24 @@
     </option>
   </component>
   <component name="ProjectId" id="1faOffN1DorlaCVTR2QpGTGPxsi" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="postgresql" />
+    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -102,10 +107,26 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ServiceRegistryApplication">
+  <component name="RunManager" selected="Spring Boot.CompanyServiceApplication">
+    <configuration name="CompanyServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="company-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.codecool.companyservice.CompanyServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ProjectServicesApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="project-services" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.codecool.projectservices.ProjectServicesApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProjectServicesApplication2" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="project-services" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.codecool.projectservices.ProjectServicesApplication" />
+      <option name="VM_PARAMETERS" value="-Dserver.port=8082" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -131,7 +152,7 @@
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="Finished" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
             </expand>
             <select />
@@ -151,78 +172,104 @@
       <option name="presentableId" value="Default" />
       <updated>1596452841729</updated>
       <workItem from="1596452843372" duration="6291000" />
+      <workItem from="1596466727422" duration="6931000" />
     </task>
+    <task id="LOCAL-00001" summary="hello branch">
+      <created>1596466758097</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1596466758097</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="hello branch" />
+    <option name="LAST_COMMIT_MESSAGE" value="hello branch" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="283" y="23" key="#ProjectServicesApplication_(1)" timestamp="1596538835249">
+      <screen x="0" y="23" width="1280" height="702" />
+    </state>
+    <state x="283" y="23" key="#ProjectServicesApplication_(1)/-1920.161.1920.1057/0.23.1280.702@0.23.1280.702" timestamp="1596538835249" />
     <state x="240" y="65" key="#Project_Structure" timestamp="1596452860252">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="240" y="65" key="#Project_Structure/-1920.138.1920.1080/0.0.1280.800@0.0.1280.800" timestamp="1596452860252" />
-    <state x="240" y="39" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596455585150">
+    <state x="240" y="39" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596537207925">
       <screen x="0" y="23" width="1280" height="702" />
     </state>
-    <state x="240" y="39" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.161.1920.1057/0.23.1280.702@0.23.1280.702" timestamp="1596455585150" />
-    <state width="846" height="172" key="GridCell.Tab.0.bottom" timestamp="1596466722687">
+    <state x="240" y="39" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.161.1920.1057/0.23.1280.702@0.23.1280.702" timestamp="1596537207925" />
+    <state x="208" y="23" key="CommitChangelistDialog2" timestamp="1596466757781">
+      <screen x="0" y="23" width="1280" height="702" />
+    </state>
+    <state x="208" y="23" key="CommitChangelistDialog2/-1920.161.1920.1057/0.23.1280.702@0.23.1280.702" timestamp="1596466757781" />
+    <state width="846" height="172" key="GridCell.Tab.0.bottom" timestamp="1596542897806">
       <screen x="0" y="23" width="1280" height="702" />
     </state>
     <state width="1238" height="212" key="GridCell.Tab.0.bottom/-1920.138.1920.1080/0.0.1280.800@0.0.1280.800" timestamp="1596453041957" />
-    <state width="846" height="172" key="GridCell.Tab.0.bottom/-1920.161.1920.1057/0.23.1280.702@0.23.1280.702" timestamp="1596466722687" />
-    <state width="846" height="172" key="GridCell.Tab.0.center" timestamp="1596466722686">
+    <state width="846" height="172" key="GridCell.Tab.0.bottom/-1920.161.1920.1057/0.23.1280.702@0.23.1280.702" timestamp="1596542897806" />
+    <state width="846" height="172" key="GridCell.Tab.0.center" timestamp="1596542897805">
       <screen x="0" y="23" width="1280" height="702" />
     </state>
     <state width="1238" height="212" key="GridCell.Tab.0.center/-1920.138.1920.1080/0.0.1280.800@0.0.1280.800" timestamp="1596453041954" />
-    <state width="846" height="172" key="GridCell.Tab.0.center/-1920.161.1920.1057/0.23.1280.702@0.23.1280.702" timestamp="1596466722686" />
-    <state width="846" height="172" key="GridCell.Tab.0.left" timestamp="1596466722686">
+    <state width="846" height="172" key="GridCell.Tab.0.center/-1920.161.1920.1057/0.23.1280.702@0.23.1280.702" timestamp="1596542897805" />
+    <state width="846" height="172" key="GridCell.Tab.0.left" timestamp="1596542897804">
       <screen x="0" y="23" width="1280" height="702" />
     </state>
     <state width="1238" height="212" key="GridCell.Tab.0.left/-1920.138.1920.1080/0.0.1280.800@0.0.1280.800" timestamp="1596453041953" />
-    <state width="846" height="172" key="GridCell.Tab.0.left/-1920.161.1920.1057/0.23.1280.702@0.23.1280.702" timestamp="1596466722686" />
-    <state width="846" height="172" key="GridCell.Tab.0.right" timestamp="1596466722687">
+    <state width="846" height="172" key="GridCell.Tab.0.left/-1920.161.1920.1057/0.23.1280.702@0.23.1280.702" timestamp="1596542897804" />
+    <state width="846" height="172" key="GridCell.Tab.0.right" timestamp="1596542897806">
       <screen x="0" y="23" width="1280" height="702" />
     </state>
     <state width="1238" height="212" key="GridCell.Tab.0.right/-1920.138.1920.1080/0.0.1280.800@0.0.1280.800" timestamp="1596453041956" />
-    <state width="846" height="172" key="GridCell.Tab.0.right/-1920.161.1920.1057/0.23.1280.702@0.23.1280.702" timestamp="1596466722687" />
-    <state width="846" height="172" key="GridCell.Tab.1.bottom" timestamp="1596466722689">
+    <state width="846" height="172" key="GridCell.Tab.0.right/-1920.161.1920.1057/0.23.1280.702@0.23.1280.702" timestamp="1596542897806" />
+    <state width="846" height="172" key="GridCell.Tab.1.bottom" timestamp="1596542897810">
       <screen x="0" y="23" width="1280" height="702" />
     </state>
     <state width="1238" height="212" key="GridCell.Tab.1.bottom/-1920.138.1920.1080/0.0.1280.800@0.0.1280.800" timestamp="1596453041963" />
-    <state width="846" height="172" key="GridCell.Tab.1.bottom/-1920.161.1920.1057/0.23.1280.702@0.23.1280.702" timestamp="1596466722689" />
-    <state width="846" height="172" key="GridCell.Tab.1.center" timestamp="1596466722688">
+    <state width="846" height="172" key="GridCell.Tab.1.bottom/-1920.161.1920.1057/0.23.1280.702@0.23.1280.702" timestamp="1596542897810" />
+    <state width="846" height="172" key="GridCell.Tab.1.center" timestamp="1596542897808">
       <screen x="0" y="23" width="1280" height="702" />
     </state>
     <state width="1238" height="212" key="GridCell.Tab.1.center/-1920.138.1920.1080/0.0.1280.800@0.0.1280.800" timestamp="1596453041960" />
-    <state width="846" height="172" key="GridCell.Tab.1.center/-1920.161.1920.1057/0.23.1280.702@0.23.1280.702" timestamp="1596466722688" />
-    <state width="846" height="172" key="GridCell.Tab.1.left" timestamp="1596466722688">
+    <state width="846" height="172" key="GridCell.Tab.1.center/-1920.161.1920.1057/0.23.1280.702@0.23.1280.702" timestamp="1596542897808" />
+    <state width="846" height="172" key="GridCell.Tab.1.left" timestamp="1596542897807">
       <screen x="0" y="23" width="1280" height="702" />
     </state>
     <state width="1238" height="212" key="GridCell.Tab.1.left/-1920.138.1920.1080/0.0.1280.800@0.0.1280.800" timestamp="1596453041959" />
-    <state width="846" height="172" key="GridCell.Tab.1.left/-1920.161.1920.1057/0.23.1280.702@0.23.1280.702" timestamp="1596466722688" />
-    <state width="846" height="172" key="GridCell.Tab.1.right" timestamp="1596466722689">
+    <state width="846" height="172" key="GridCell.Tab.1.left/-1920.161.1920.1057/0.23.1280.702@0.23.1280.702" timestamp="1596542897807" />
+    <state width="846" height="172" key="GridCell.Tab.1.right" timestamp="1596542897809">
       <screen x="0" y="23" width="1280" height="702" />
     </state>
     <state width="1238" height="212" key="GridCell.Tab.1.right/-1920.138.1920.1080/0.0.1280.800@0.0.1280.800" timestamp="1596453041962" />
-    <state width="846" height="172" key="GridCell.Tab.1.right/-1920.161.1920.1057/0.23.1280.702@0.23.1280.702" timestamp="1596466722689" />
+    <state width="846" height="172" key="GridCell.Tab.1.right/-1920.161.1920.1057/0.23.1280.702@0.23.1280.702" timestamp="1596542897809" />
     <state x="178" y="36" key="Maven.ArtifactSearchDialog" timestamp="1596457060134">
       <screen x="0" y="23" width="1280" height="702" />
     </state>
     <state x="178" y="36" key="Maven.ArtifactSearchDialog/-1920.161.1920.1057/0.23.1280.702@0.23.1280.702" timestamp="1596457060134" />
-    <state x="128" y="23" key="SettingsEditor" timestamp="1596462421975">
+    <state x="128" y="23" key="SettingsEditor" timestamp="1596536988434">
       <screen x="0" y="23" width="1280" height="702" />
     </state>
     <state x="128" y="0" key="SettingsEditor/-1920.138.1920.1080/0.0.1280.800@0.0.1280.800" timestamp="1596452950615" />
-    <state x="128" y="23" key="SettingsEditor/-1920.161.1920.1057/0.23.1280.702@0.23.1280.702" timestamp="1596462421975" />
+    <state x="128" y="23" key="SettingsEditor/-1920.161.1920.1057/0.23.1280.702@0.23.1280.702" timestamp="1596536988434" />
+    <state x="240" y="114" key="Vcs.Push.Dialog.v2" timestamp="1596466761128">
+      <screen x="0" y="23" width="1280" height="702" />
+    </state>
+    <state x="240" y="114" key="Vcs.Push.Dialog.v2/-1920.161.1920.1057/0.23.1280.702@0.23.1280.702" timestamp="1596466761128" />
     <state x="545" y="276" width="326" height="220" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1596456202610">
       <screen x="0" y="23" width="1280" height="702" />
     </state>
     <state x="545" y="276" width="326" height="220" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/-1920.161.1920.1057/0.23.1280.702@0.23.1280.702" timestamp="1596456202610" />
-    <state x="70" y="42" key="new project wizard" timestamp="1596462404089">
+    <state x="70" y="42" key="new project wizard" timestamp="1596536984145">
       <screen x="0" y="23" width="1280" height="702" />
     </state>
     <state x="70" y="22" key="new project wizard/-1920.138.1920.1080/0.0.1280.800@0.0.1280.800" timestamp="1596452946119" />
-    <state x="70" y="42" key="new project wizard/-1920.161.1920.1057/0.23.1280.702@0.23.1280.702" timestamp="1596462404089" />
+    <state x="70" y="42" key="new project wizard/-1920.161.1920.1057/0.23.1280.702@0.23.1280.702" timestamp="1596536984145" />
   </component>
 </project>

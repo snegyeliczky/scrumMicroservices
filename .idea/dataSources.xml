@@ -7,5 +7,11 @@
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql://localhost:5432/scrum</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="company@localhost" uuid="152b7d24-31dd-41ea-9b20-043569e9e7d6">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://localhost:5432/company</jdbc-url>
+    </data-source>
   </component>
 </project>
