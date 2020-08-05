@@ -48,7 +48,6 @@ public class AuthController {
     @PostMapping("/signin")
     public ResponseEntity signin(@RequestBody UserCredentials user, HttpServletResponse response){
         logInfo();
-        System.out.println("hello");
         return authService.signIn(user,response);
     }
 

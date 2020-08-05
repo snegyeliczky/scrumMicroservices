@@ -5,10 +5,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.List;
 import java.util.UUID;
 
 @Data
@@ -23,4 +21,7 @@ public class Project {
 
     @Column
     private String name;
+
+    @ElementCollection
+    private List<UUID> companyIds;
 }

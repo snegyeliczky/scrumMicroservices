@@ -7,7 +7,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.UUID;
 
 @Component
 public class ProjectService {
@@ -17,8 +19,14 @@ public class ProjectService {
 
     public ResponseEntity createNewProject(ProjectCredential project) {
         try {
+            List<UUID> companyIds = new ArrayList<>();
+            companyIds.add(project.getCompanyId());
+
             Project newProject = new Project();
             newProject.setName(project.getProjectName());
+            newProject.setCompanyIds(companyIds);
+
+
             projectRepository.save(newProject);
             return ResponseEntity.ok(true);
         }catch (Exception e){
