@@ -28,7 +28,7 @@ public class ProjectController {
     private Environment env;
 
     private void logInfo(){
-        log.info("port: "+env.getProperty("server.port")+" called at: "+LocalDateTime.now());
+        log.info("project service port: "+env.getProperty("server.port")+" called at: "+LocalDateTime.now());
     }
 
     @PostMapping("/new")
@@ -44,6 +44,7 @@ public class ProjectController {
 
     @GetMapping("/{companyId}")
     public List<Project> getProjectForCompany(@PathVariable UUID companyId){
+        logInfo();
         return projectService.getProjectForCompany(companyId);
     }
 }

@@ -31,7 +31,7 @@ public class CompanyController {
 
 
     private void logInfo(){
-        log.info("port: "+env.getProperty("server.port")+" called at: "+ LocalDateTime.now());
+        log.info("Company service port: "+env.getProperty("server.port")+" called at: "+ LocalDateTime.now());
     }
 
     @PostMapping("/create-company")
@@ -51,6 +51,7 @@ public class CompanyController {
 
     @PostMapping("/company-with-projects")
     public CompanyAndProjects companyAndProjects(@RequestBody Employee employee){
+        logInfo();
         return companyService.companyAndProjects(employee);
     }
 
