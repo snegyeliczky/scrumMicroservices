@@ -2,17 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5dcb941b-f8dc-4bbf-87a7-84ec358146f4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/company-service/src/main/java/com/codecool/companyservice/model/Company.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/company-service/src/main/java/com/codecool/companyservice/model/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/company-service/src/main/java/com/codecool/companyservice/repository/CompanyRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/company-service/src/main/java/com/codecool/companyservice/model/credential/CompanyAndProjects.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/company-service/src/main/java/com/codecool/companyservice/service/CompanyService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/a3f9e806-fbda-4761-8cae-db0ddafe4cde.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a3f9e806-fbda-4761-8cae-db0ddafe4cde.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a3f9e806-fbda-4761-8cae-db0ddafe4cde/storage_v2/_src_/database/scrum.OkqDBg/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a3f9e806-fbda-4761-8cae-db0ddafe4cde/storage_v2/_src_/database/scrum.OkqDBg/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/java/com/codecool/apigateway/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/codecool/apigateway/controller/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/java/com/codecool/apigateway/security/CustomUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/codecool/apigateway/security/CustomUserDetailsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/company-service/src/main/java/com/codecool/companyservice/model/ProjectData.java" beforeDir="false" afterPath="$PROJECT_DIR$/company-service/src/main/java/com/codecool/companyservice/model/ProjectData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-services/src/main/java/com/codecool/projectservices/model/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-services/src/main/java/com/codecool/projectservices/model/Project.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-services/src/main/java/com/codecool/projectservices/model/credentials/ProjectCredential.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-services/src/main/java/com/codecool/projectservices/model/credentials/ProjectCredential.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/java/com/codecool/apigateway/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/codecool/apigateway/security/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/company-service/src/main/java/com/codecool/companyservice/conroller/CompanyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/company-service/src/main/java/com/codecool/companyservice/conroller/CompanyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/company-service/src/main/java/com/codecool/companyservice/model/Company.java" beforeDir="false" afterPath="$PROJECT_DIR$/company-service/src/main/java/com/codecool/companyservice/model/Company.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/company-service/src/main/java/com/codecool/companyservice/repository/CompanyRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/company-service/src/main/java/com/codecool/companyservice/repository/CompanyRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/company-service/src/main/java/com/codecool/companyservice/service/ProjectServiceCaller.java" beforeDir="false" afterPath="$PROJECT_DIR$/company-service/src/main/java/com/codecool/companyservice/service/ProjectServiceCaller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-services/src/main/java/com/codecool/projectservices/controller/ProjectController.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-services/src/main/java/com/codecool/projectservices/controller/ProjectController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-services/src/main/java/com/codecool/projectservices/repository/ProjectRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-services/src/main/java/com/codecool/projectservices/repository/ProjectRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project-services/src/main/java/com/codecool/projectservices/service/ProjectService.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-services/src/main/java/com/codecool/projectservices/service/ProjectService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,61 +34,61 @@
     <expand>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="scrum@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="company@localhost" type="feb32156:DbDataSourceImpl" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="scrum@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="company@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="scrum@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="company@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="scrum: database" type="162271b6:PgImplModel$Database" />
+        <item name="company: database" type="162271b6:PgImplModel$Database" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="scrum@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="company@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="scrum: database" type="162271b6:PgImplModel$Database" />
+        <item name="company: database" type="162271b6:PgImplModel$Database" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="scrum@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="company@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="scrum: database" type="162271b6:PgImplModel$Database" />
+        <item name="company: database" type="162271b6:PgImplModel$Database" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="scrumUsers@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="scrum@localhost" type="feb32156:DbDataSourceImpl" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="scrumUsers@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="scrum@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="scrumUsers@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="scrum@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="scrumUsers: database" type="162271b6:PgImplModel$Database" />
+        <item name="scrum: database" type="162271b6:PgImplModel$Database" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="scrumUsers@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="scrum@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="scrumUsers: database" type="162271b6:PgImplModel$Database" />
+        <item name="scrum: database" type="162271b6:PgImplModel$Database" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="scrumUsers@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="scrum@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="scrumUsers: database" type="162271b6:PgImplModel$Database" />
+        <item name="scrum: database" type="162271b6:PgImplModel$Database" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
       </path>
@@ -98,8 +98,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -140,11 +140,12 @@
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.codecool.companyservice.service" />
+      <recent name="com.codecool.projectservices.service" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/api-gateway/src/main/java/com/codecool/apigateway" />
-    </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.codecool.projectservices.service" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -213,14 +214,6 @@
                 <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
                 <item name="Finished" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="scrum@localhost: root" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="scrumUsers@localhost: root" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
             </expand>
             <select />
           </treeState>
@@ -239,7 +232,8 @@
       <option name="presentableId" value="Default" />
       <updated>1596452841729</updated>
       <workItem from="1596452843372" duration="6291000" />
-      <workItem from="1596466727422" duration="22294000" />
+      <workItem from="1596466727422" duration="22479000" />
+      <workItem from="1596703115878" duration="6425000" />
     </task>
     <task id="LOCAL-00001" summary="hello branch">
       <created>1596466758097</created>
@@ -276,7 +270,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596625739933</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="company ids added to project">
+      <created>1596638142926</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1596638142926</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -289,7 +290,8 @@
     <MESSAGE value="zuul added" />
     <MESSAGE value="jwt,registration,signin added" />
     <MESSAGE value="authenticated gets data from company-service" />
-    <option name="LAST_COMMIT_MESSAGE" value="authenticated gets data from company-service" />
+    <MESSAGE value="company ids added to project" />
+    <option name="LAST_COMMIT_MESSAGE" value="company ids added to project" />
   </component>
   <component name="WindowStateProjectService">
     <state x="283" y="23" key="#ProjectServicesApplication_(1)" timestamp="1596538835249">
@@ -304,50 +306,50 @@
       <screen x="0" y="23" width="1280" height="702" />
     </state>
     <state x="240" y="39" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.161.1920.1057/0.23.1280.702@0.23.1280.702" timestamp="1596624478100" />
-    <state x="208" y="23" key="CommitChangelistDialog2" timestamp="1596625739587">
+    <state x="208" y="23" key="CommitChangelistDialog2" timestamp="1596638142466">
       <screen x="0" y="23" width="1280" height="702" />
     </state>
-    <state x="208" y="23" key="CommitChangelistDialog2/-1920.161.1920.1057/0.23.1280.702@0.23.1280.702" timestamp="1596625739587" />
-    <state width="846" height="224" key="GridCell.Tab.0.bottom" timestamp="1596638020788">
+    <state x="208" y="23" key="CommitChangelistDialog2/-1920.161.1920.1057/0.23.1280.702@0.23.1280.702" timestamp="1596638142466" />
+    <state width="846" height="252" key="GridCell.Tab.0.bottom" timestamp="1596712202497">
       <screen x="0" y="23" width="1280" height="702" />
     </state>
     <state width="1238" height="212" key="GridCell.Tab.0.bottom/-1920.138.1920.1080/0.0.1280.800@0.0.1280.800" timestamp="1596453041957" />
-    <state width="846" height="224" key="GridCell.Tab.0.bottom/-1920.161.1920.1057/0.23.1280.702@0.23.1280.702" timestamp="1596638020788" />
-    <state width="846" height="224" key="GridCell.Tab.0.center" timestamp="1596638020787">
+    <state width="846" height="252" key="GridCell.Tab.0.bottom/-1920.161.1920.1057/0.23.1280.702@0.23.1280.702" timestamp="1596712202497" />
+    <state width="846" height="252" key="GridCell.Tab.0.center" timestamp="1596712202489">
       <screen x="0" y="23" width="1280" height="702" />
     </state>
     <state width="1238" height="212" key="GridCell.Tab.0.center/-1920.138.1920.1080/0.0.1280.800@0.0.1280.800" timestamp="1596453041954" />
-    <state width="846" height="224" key="GridCell.Tab.0.center/-1920.161.1920.1057/0.23.1280.702@0.23.1280.702" timestamp="1596638020787" />
-    <state width="846" height="224" key="GridCell.Tab.0.left" timestamp="1596638020787">
+    <state width="846" height="252" key="GridCell.Tab.0.center/-1920.161.1920.1057/0.23.1280.702@0.23.1280.702" timestamp="1596712202489" />
+    <state width="846" height="252" key="GridCell.Tab.0.left" timestamp="1596712202486">
       <screen x="0" y="23" width="1280" height="702" />
     </state>
     <state width="1238" height="212" key="GridCell.Tab.0.left/-1920.138.1920.1080/0.0.1280.800@0.0.1280.800" timestamp="1596453041953" />
-    <state width="846" height="224" key="GridCell.Tab.0.left/-1920.161.1920.1057/0.23.1280.702@0.23.1280.702" timestamp="1596638020787" />
-    <state width="846" height="224" key="GridCell.Tab.0.right" timestamp="1596638020788">
+    <state width="846" height="252" key="GridCell.Tab.0.left/-1920.161.1920.1057/0.23.1280.702@0.23.1280.702" timestamp="1596712202486" />
+    <state width="846" height="252" key="GridCell.Tab.0.right" timestamp="1596712202490">
       <screen x="0" y="23" width="1280" height="702" />
     </state>
     <state width="1238" height="212" key="GridCell.Tab.0.right/-1920.138.1920.1080/0.0.1280.800@0.0.1280.800" timestamp="1596453041956" />
-    <state width="846" height="224" key="GridCell.Tab.0.right/-1920.161.1920.1057/0.23.1280.702@0.23.1280.702" timestamp="1596638020788" />
-    <state width="846" height="224" key="GridCell.Tab.1.bottom" timestamp="1596638020792">
+    <state width="846" height="252" key="GridCell.Tab.0.right/-1920.161.1920.1057/0.23.1280.702@0.23.1280.702" timestamp="1596712202490" />
+    <state width="846" height="252" key="GridCell.Tab.1.bottom" timestamp="1596712202501">
       <screen x="0" y="23" width="1280" height="702" />
     </state>
     <state width="1238" height="212" key="GridCell.Tab.1.bottom/-1920.138.1920.1080/0.0.1280.800@0.0.1280.800" timestamp="1596453041963" />
-    <state width="846" height="224" key="GridCell.Tab.1.bottom/-1920.161.1920.1057/0.23.1280.702@0.23.1280.702" timestamp="1596638020792" />
-    <state width="846" height="224" key="GridCell.Tab.1.center" timestamp="1596638020789">
+    <state width="846" height="252" key="GridCell.Tab.1.bottom/-1920.161.1920.1057/0.23.1280.702@0.23.1280.702" timestamp="1596712202501" />
+    <state width="846" height="252" key="GridCell.Tab.1.center" timestamp="1596712202499">
       <screen x="0" y="23" width="1280" height="702" />
     </state>
     <state width="1238" height="212" key="GridCell.Tab.1.center/-1920.138.1920.1080/0.0.1280.800@0.0.1280.800" timestamp="1596453041960" />
-    <state width="846" height="224" key="GridCell.Tab.1.center/-1920.161.1920.1057/0.23.1280.702@0.23.1280.702" timestamp="1596638020789" />
-    <state width="846" height="224" key="GridCell.Tab.1.left" timestamp="1596638020789">
+    <state width="846" height="252" key="GridCell.Tab.1.center/-1920.161.1920.1057/0.23.1280.702@0.23.1280.702" timestamp="1596712202499" />
+    <state width="846" height="252" key="GridCell.Tab.1.left" timestamp="1596712202498">
       <screen x="0" y="23" width="1280" height="702" />
     </state>
     <state width="1238" height="212" key="GridCell.Tab.1.left/-1920.138.1920.1080/0.0.1280.800@0.0.1280.800" timestamp="1596453041959" />
-    <state width="846" height="224" key="GridCell.Tab.1.left/-1920.161.1920.1057/0.23.1280.702@0.23.1280.702" timestamp="1596638020789" />
-    <state width="846" height="224" key="GridCell.Tab.1.right" timestamp="1596638020792">
+    <state width="846" height="252" key="GridCell.Tab.1.left/-1920.161.1920.1057/0.23.1280.702@0.23.1280.702" timestamp="1596712202498" />
+    <state width="846" height="252" key="GridCell.Tab.1.right" timestamp="1596712202499">
       <screen x="0" y="23" width="1280" height="702" />
     </state>
     <state width="1238" height="212" key="GridCell.Tab.1.right/-1920.138.1920.1080/0.0.1280.800@0.0.1280.800" timestamp="1596453041962" />
-    <state width="846" height="224" key="GridCell.Tab.1.right/-1920.161.1920.1057/0.23.1280.702@0.23.1280.702" timestamp="1596638020792" />
+    <state width="846" height="252" key="GridCell.Tab.1.right/-1920.161.1920.1057/0.23.1280.702@0.23.1280.702" timestamp="1596712202499" />
     <state x="178" y="36" key="Maven.ArtifactSearchDialog" timestamp="1596457060134">
       <screen x="0" y="23" width="1280" height="702" />
     </state>
@@ -357,10 +359,10 @@
     </state>
     <state x="128" y="0" key="SettingsEditor/-1920.138.1920.1080/0.0.1280.800@0.0.1280.800" timestamp="1596452950615" />
     <state x="128" y="23" key="SettingsEditor/-1920.161.1920.1057/0.23.1280.702@0.23.1280.702" timestamp="1596619171784" />
-    <state x="240" y="114" key="Vcs.Push.Dialog.v2" timestamp="1596625741705">
+    <state x="240" y="114" key="Vcs.Push.Dialog.v2" timestamp="1596638146642">
       <screen x="0" y="23" width="1280" height="702" />
     </state>
-    <state x="240" y="114" key="Vcs.Push.Dialog.v2/-1920.161.1920.1057/0.23.1280.702@0.23.1280.702" timestamp="1596625741705" />
+    <state x="240" y="114" key="Vcs.Push.Dialog.v2/-1920.161.1920.1057/0.23.1280.702@0.23.1280.702" timestamp="1596638146642" />
     <state x="545" y="276" width="326" height="220" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1596637521446">
       <screen x="0" y="23" width="1280" height="702" />
     </state>
@@ -378,5 +380,9 @@
     </state>
     <state x="70" y="22" key="new project wizard/-1920.138.1920.1080/0.0.1280.800@0.0.1280.800" timestamp="1596452946119" />
     <state x="70" y="42" key="new project wizard/-1920.161.1920.1057/0.23.1280.702@0.23.1280.702" timestamp="1596619168153" />
+    <state x="305" y="49" width="670" height="676" key="search.everywhere.popup" timestamp="1596704191177">
+      <screen x="0" y="23" width="1280" height="702" />
+    </state>
+    <state x="305" y="49" width="670" height="676" key="search.everywhere.popup/-1920.161.1920.1057/0.23.1280.702@0.23.1280.702" timestamp="1596704191177" />
   </component>
 </project>

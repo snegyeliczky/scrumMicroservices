@@ -11,6 +11,7 @@ import org.springframework.web.client.RestTemplate;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.UUID;
 
 @Service
 @Slf4j
@@ -27,9 +28,14 @@ public class ProjectServiceCaller {
         ProjectData[] body = response.getBody();
         log.info(Arrays.toString(body));
         return body;
+    }
+
+    public ProjectData[] getProjectsForCompany(UUID companyId){
+        ResponseEntity<ProjectData[]> response = restTemplate.getForEntity(baseUrl + "/" + companyId, ProjectData[].class);
+        ProjectData[] body = response.getBody();
+        return body;
 
     }
 
-
-
 }
+

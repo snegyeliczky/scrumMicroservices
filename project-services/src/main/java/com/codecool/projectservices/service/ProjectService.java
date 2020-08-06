@@ -37,4 +37,8 @@ public class ProjectService {
     public List<Project> getAllProject() {
         return  projectRepository.findAll();
     }
+
+    public List<Project> getProjectForCompany(UUID companyID) {
+        return projectRepository.findProjectsByCompanyIdsContaining(companyID);
+    }
 }

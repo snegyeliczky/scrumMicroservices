@@ -22,6 +22,6 @@ public class Company {
     private String name;
 
     @ElementCollection
-    private List<UUID> employeeIds;
+    private List<UUID> employeeIds = new ArrayList<>();
 
 }

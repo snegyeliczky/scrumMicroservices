@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.*;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.List;
+import java.util.UUID;
 
 @RestController
 @RequestMapping("/project")
@@ -39,5 +40,10 @@ public class ProjectController {
     public List<Project> getAllProject(){
         logInfo();
         return projectService.getAllProject();
+    }
+
+    @GetMapping("/{companyId}")
+    public List<Project> getProjectForCompany(@PathVariable UUID companyId){
+        return projectService.getProjectForCompany(companyId);
     }
 }

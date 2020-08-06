@@ -153,6 +153,7 @@
     </extension>
     <table id="29" parent="20" name="project">
       <ObjectId>34010</ObjectId>
+      <Outdated>1</Outdated>
       <Owner>sandornegyeliczky</Owner>
       <StateNumber>3743</StateNumber>
     </table>
