@@ -37,8 +37,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .and()
                 .authorizeRequests()
                 .antMatchers(HttpMethod.POST,"/auth/**").permitAll()
-                .antMatchers(HttpMethod.GET,"/company-service/**").authenticated()
                 .antMatchers(HttpMethod.POST,"/company-service/**").authenticated()
+                .antMatchers(HttpMethod.GET,"/company-service/**").authenticated()
                 .anyRequest().denyAll()// anything else is denied
                 .and()
                 .addFilterBefore(new JwtTokenFilter(jwtTokenServices), UsernamePasswordAuthenticationFilter.class);

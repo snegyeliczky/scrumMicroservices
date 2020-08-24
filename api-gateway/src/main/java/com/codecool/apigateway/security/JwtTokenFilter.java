@@ -28,6 +28,8 @@ public class JwtTokenFilter extends GenericFilterBean {
             // Marks the user as authenticated.
             // If this code does not run, the request will fail for routes that are configured to need authentication
             SecurityContextHolder.getContext().setAuthentication(auth);
+        }if (token==null){
+            System.out.println("No Token!!!");
         }
         // process the next filter.
         filterChain.doFilter(req, res);

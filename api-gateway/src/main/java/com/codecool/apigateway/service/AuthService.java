@@ -4,6 +4,7 @@ import com.codecool.apigateway.model.AppUser;
 import com.codecool.apigateway.model.credentials.UserCredentials;
 import com.codecool.apigateway.repository.AppUserRepository;
 import com.codecool.apigateway.security.JwtTokenServices;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -16,11 +17,15 @@ import org.springframework.stereotype.Component;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletResponse;
+import javax.validation.constraints.Size;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 
 @Component
+@Slf4j
 public class AuthService {
 
     private final AuthenticationManager authenticationManager;
@@ -63,6 +68,7 @@ public class AuthService {
                     .collect(Collectors.toList());
 
             String token = jwtTokenServices.createToken(username, roles);
+            System.out.println(token);
 
             Cookie cookie = new Cookie("token", token);
             cookie.setMaxAge(24 * 60 * 60);
@@ -70,12 +76,12 @@ public class AuthService {
             cookie.setPath("/");
             response.addCookie(cookie);
 
-            /*
+
             Map<Object, Object> model = new HashMap<>();
             model.put("username", username);
             model.put("roles", roles);
             model.put("token", token);
-             */
+
             return ResponseEntity.ok(appUserRepository.findByUsername(username));
 
         } catch (AuthenticationException e){
