@@ -12,13 +12,18 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.core.env.Environment;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.config.annotation.CorsRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 
 import java.time.LocalDateTime;
 import java.util.UUID;
 
 @RestController
+@CrossOrigin(allowCredentials = "true")
 @Slf4j
 public class CompanyController {
+
 
     @Autowired
     private ProjectServiceCaller projectServiceCaller;
@@ -52,7 +57,9 @@ public class CompanyController {
     @PostMapping("/company-with-projects")
     public CompanyAndProjects companyAndProjects(@RequestBody Employee employee){
         logInfo();
-        return companyService.companyAndProjects(employee);
+        CompanyAndProjects companyAndProjects = companyService.companyAndProjects(employee);
+        System.out.println(companyAndProjects);
+        return companyAndProjects;
     }
 
     @GetMapping("/all-project")

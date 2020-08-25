@@ -13,10 +13,7 @@ import org.springframework.web.util.WebUtils;
 import javax.annotation.PostConstruct;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
-import java.util.Base64;
-import java.util.Date;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
 @Component
 @Slf4j
@@ -54,6 +51,8 @@ public class JwtTokenServices {
 
     //changed to get token from cookie
     String getTokenFromRequest(HttpServletRequest req) {
+        Cookie[] cookies = req.getCookies();
+        System.out.println("cookies: "+Arrays.toString(cookies));
         Cookie tokenCookie = WebUtils.getCookie(req, "token");
         if (tokenCookie == null) {
             return null;

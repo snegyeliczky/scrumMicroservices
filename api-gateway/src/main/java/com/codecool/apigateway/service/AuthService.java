@@ -76,12 +76,12 @@ public class AuthService {
             cookie.setPath("/");
             response.addCookie(cookie);
 
-
+            /*
             Map<Object, Object> model = new HashMap<>();
             model.put("username", username);
             model.put("roles", roles);
             model.put("token", token);
-
+             */
             return ResponseEntity.ok(appUserRepository.findByUsername(username));
 
         } catch (AuthenticationException e){
