@@ -51,5 +51,10 @@ public class AuthController {
         return authService.signIn(user,response);
     }
 
+    @GetMapping("/logout")
+    public ResponseEntity logOut(HttpServletResponse response){
+        return authService.logout(response);
+    }
+
 
 }
