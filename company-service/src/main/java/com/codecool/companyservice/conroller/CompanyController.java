@@ -50,7 +50,7 @@ public class CompanyController {
     }
 
     @PostMapping("/company-for-user")
-    public Company companyToUser(@RequestBody Employee employee){
+    public Company[] companyToUser(@RequestBody Employee employee){
         return companyService.companyToUser(employee);
     }
 

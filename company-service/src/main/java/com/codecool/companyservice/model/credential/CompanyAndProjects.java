@@ -5,10 +5,13 @@ import com.codecool.companyservice.model.ProjectData;
 import lombok.Builder;
 import lombok.Data;
 
+import java.util.Map;
+import java.util.UUID;
+
 
 @Data
 @Builder
 public class CompanyAndProjects {
-    private Company company;
-    private ProjectData[] projectData;
+    private Company[] company;
+    private Map<UUID,ProjectData[]> projectsForCompany;
 }

@@ -10,9 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
-import java.util.Optional;
-import java.util.UUID;
+import java.util.*;
 
 @Service
 @Slf4j
@@ -51,16 +49,20 @@ public class CompanyService {
         }
     }
 
-    public Company companyToUser(Employee employee) {
-        return companyRepository.findCompanyByEmployeeIdsContains(employee.getId());
+    public Company[] companyToUser(Employee employee) {
+        return companyRepository.findCompaniesByEmployeeIdsContains(employee.getId());
     }
 
     public CompanyAndProjects companyAndProjects(Employee employee) {
-        Company company = companyRepository.findCompanyByEmployeeIdsContains(employee.getId());
-        ProjectData[] projectsForCompany = projectServiceCaller.getProjectsForCompany(company.getId());
+        Company[] companies = companyRepository.findCompaniesByEmployeeIdsContains(employee.getId());
+        Map<UUID,ProjectData[]> projectsForCompany = new HashMap<>();
+        for (Company company : companies ){
+            ProjectData[] projectsOfCompany = projectServiceCaller.getProjectsForCompany(company.getId());
+            projectsForCompany.put(company.getId(),projectsOfCompany);
+        }
         return CompanyAndProjects.builder()
-                .company(company)
-                .projectData(projectsForCompany)
+                .company(companies)
+                .projectsForCompany(projectsForCompany)
                 .build();
 
     }
