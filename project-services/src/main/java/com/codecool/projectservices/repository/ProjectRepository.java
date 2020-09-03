@@ -10,4 +10,5 @@ public interface ProjectRepository extends JpaRepository<Project, UUID> {
 
     List<Project> findProjectsByCompanyIdsContaining(UUID companyId);
 
+    Project getProjectById(UUID projectId);
 }

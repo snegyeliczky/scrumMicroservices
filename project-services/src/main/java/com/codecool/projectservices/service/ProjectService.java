@@ -3,6 +3,7 @@ package com.codecool.projectservices.service;
 import com.codecool.projectservices.model.Project;
 import com.codecool.projectservices.model.credentials.ProjectCredential;
 import com.codecool.projectservices.repository.ProjectRepository;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
@@ -40,5 +41,11 @@ public class ProjectService {
 
     public List<Project> getProjectForCompany(UUID companyID) {
         return projectRepository.findProjectsByCompanyIdsContaining(companyID);
+    }
+
+    public Project getProjectByID(UUID projectId) {
+        Project one = projectRepository.getProjectById(projectId);
+        return one;
+
     }
 }

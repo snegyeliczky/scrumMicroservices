@@ -42,9 +42,16 @@ public class ProjectController {
         return projectService.getAllProject();
     }
 
-    @GetMapping("/{companyId}")
+    @GetMapping("/company/{companyId}")
     public List<Project> getProjectForCompany(@PathVariable UUID companyId){
         logInfo();
         return projectService.getProjectForCompany(companyId);
+    }
+
+    @GetMapping("/{projectId}")
+    public Project getProjectById(@PathVariable UUID projectId){
+        Project projectByID = projectService.getProjectByID(projectId);
+        System.out.println(projectByID.toString());
+        return projectByID;
     }
 }
