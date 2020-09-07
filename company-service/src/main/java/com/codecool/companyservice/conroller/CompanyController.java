@@ -6,6 +6,7 @@ import com.codecool.companyservice.model.ProjectData;
 import com.codecool.companyservice.model.credential.CompanyAndProjects;
 import com.codecool.companyservice.service.CompanyService;
 import com.codecool.companyservice.service.ProjectServiceCaller;
+import com.codecool.companyservice.service.UserServiceCaller;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -30,6 +31,10 @@ public class CompanyController {
 
     @Autowired
     private CompanyService companyService;
+
+    @Autowired
+    private UserServiceCaller userServiceCaller;
+
 
     @Autowired
     private Environment env;

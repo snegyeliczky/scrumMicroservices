@@ -1,7 +1,9 @@
 package com.codecool.apigateway.controller;
 
+import com.codecool.apigateway.model.AppUser;
 import com.codecool.apigateway.model.credentials.UserCredentials;
 import com.codecool.apigateway.service.AuthService;
+import com.codecool.apigateway.util.Util;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
@@ -25,6 +27,8 @@ public class AuthController {
     @Autowired
     private Environment env;
 
+    @Autowired
+    private Util util;
 
     private final PasswordEncoder passwordEncoder;
 
@@ -57,4 +61,8 @@ public class AuthController {
     }
 
 
+    @GetMapping("/get-user")
+    public AppUser getUserFromContext(){
+        return util.getUserFromContext();
+    }
 }
