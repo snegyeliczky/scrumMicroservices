@@ -1,6 +1,4 @@
-package com.codecool.apigateway.model;
-
-
+package com.codecool.userservice.model;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -36,5 +34,5 @@ public class AppUser {
     @ElementCollection
     @Builder.Default
     private List<String> roles = new ArrayList<>();
-
 }
+

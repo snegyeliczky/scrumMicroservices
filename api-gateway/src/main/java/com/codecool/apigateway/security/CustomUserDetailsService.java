@@ -3,6 +3,8 @@ package com.codecool.apigateway.security;
 
 import com.codecool.apigateway.model.AppUser;
 import com.codecool.apigateway.repository.AppUserRepository;
+import com.codecool.apigateway.service.UserServiceCaller;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -17,6 +19,9 @@ public class CustomUserDetailsService implements UserDetailsService {
 
     private AppUserRepository users;
 
+    @Autowired
+    private UserServiceCaller userServiceCaller;
+
     public CustomUserDetailsService(AppUserRepository users) {
         this.users = users;
     }
@@ -26,8 +31,10 @@ public class CustomUserDetailsService implements UserDetailsService {
      */
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        AppUser user = users.findByUsername(username)
-                .orElseThrow(() -> new UsernameNotFoundException("Username: " + username + " not found"));
+        AppUser user = userServiceCaller.getUserByName(username);
+        System.out.println(user.toString());
+        // users.findByUsername(username)
+               // .orElseThrow(() -> new UsernameNotFoundException("Username: " + username + " not found"));
 
         return new User(user.getUsername(), user.getPassword(),
                 user.getRoles().stream().map(SimpleGrantedAuthority::new).collect(Collectors.toList()));
