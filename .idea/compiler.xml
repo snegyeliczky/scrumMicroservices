@@ -7,16 +7,18 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="project-services" />
-        <module name="user-service" />
         <module name="service-registry" />
         <module name="company-service" />
         <module name="api-gateway" />
+        <module name="user-service" />
+        <module name="project-services" />
+        <module name="oauth2" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="api-gateway" target="11" />
       <module name="company-service" target="11" />
+      <module name="oauth2" target="11" />
       <module name="project-services" target="11" />
       <module name="service-registry" target="11" />
       <module name="user-service" target="11" />
@@ -26,6 +28,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="api-gateway" options="-parameters" />
       <module name="company-service" options="-parameters" />
+      <module name="oauth2" options="-parameters" />
       <module name="project-services" options="-parameters" />
       <module name="service-registry" options="-parameters" />
       <module name="user-service" options="-parameters" />

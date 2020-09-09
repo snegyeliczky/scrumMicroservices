@@ -2,16 +2,79 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5dcb941b-f8dc-4bbf-87a7-84ec358146f4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/codecool/apigateway/service/UserServiceCaller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/codecool/userservice/controller/AppUserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/codecool/userservice/model/AppUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/codecool/userservice/repository/AppUserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth2-gateway/HELP.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth2-gateway/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth2-gateway/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth2-gateway/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth2-gateway/src/main/java/com/codecool/oauth2/Oauth2Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth2-gateway/src/main/java/com/codecool/oauth2/config/AppProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth2-gateway/src/main/java/com/codecool/oauth2/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth2-gateway/src/main/java/com/codecool/oauth2/config/WebMcvConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth2-gateway/src/main/java/com/codecool/oauth2/controller/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth2-gateway/src/main/java/com/codecool/oauth2/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth2-gateway/src/main/java/com/codecool/oauth2/controller/mainController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth2-gateway/src/main/java/com/codecool/oauth2/exception/BadRequestException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth2-gateway/src/main/java/com/codecool/oauth2/exception/OAuth2AuthenticationProcessingException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth2-gateway/src/main/java/com/codecool/oauth2/exception/ResourceNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth2-gateway/src/main/java/com/codecool/oauth2/model/AuthProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth2-gateway/src/main/java/com/codecool/oauth2/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth2-gateway/src/main/java/com/codecool/oauth2/payload/ApiResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth2-gateway/src/main/java/com/codecool/oauth2/payload/AuthResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth2-gateway/src/main/java/com/codecool/oauth2/payload/LoginRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth2-gateway/src/main/java/com/codecool/oauth2/payload/SignUpRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth2-gateway/src/main/java/com/codecool/oauth2/repositories/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth2-gateway/src/main/java/com/codecool/oauth2/security/CurrentUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth2-gateway/src/main/java/com/codecool/oauth2/security/CustomUserDetailsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth2-gateway/src/main/java/com/codecool/oauth2/security/RestAuthenticationEntryPoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth2-gateway/src/main/java/com/codecool/oauth2/security/TokenAuthenticationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth2-gateway/src/main/java/com/codecool/oauth2/security/TokenProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth2-gateway/src/main/java/com/codecool/oauth2/security/UserPrincipal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth2-gateway/src/main/java/com/codecool/oauth2/security/oauth2/CustomOAuth2UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth2-gateway/src/main/java/com/codecool/oauth2/security/oauth2/HttpCookieOAuth2AuthorizationRequestRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth2-gateway/src/main/java/com/codecool/oauth2/security/oauth2/OAuth2AuthenticationFailureHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth2-gateway/src/main/java/com/codecool/oauth2/security/oauth2/OAuth2AuthenticationSuccessHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth2-gateway/src/main/java/com/codecool/oauth2/security/oauth2/user/GoogleOAuth2UserInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth2-gateway/src/main/java/com/codecool/oauth2/security/oauth2/user/OAuth2UserInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth2-gateway/src/main/java/com/codecool/oauth2/security/oauth2/user/OAuth2UserInfoFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth2-gateway/src/main/java/com/codecool/oauth2/util/CookieUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth2-gateway/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth2-gateway/src/test/java/com/codecool/oauth2/Oauth2ApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth2-gateway/target/classes/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth2-gateway/target/classes/com/codecool/oauth2/Oauth2Application.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth2-gateway/target/classes/com/codecool/oauth2/config/AppProperties$Auth.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth2-gateway/target/classes/com/codecool/oauth2/config/AppProperties$OAuth2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth2-gateway/target/classes/com/codecool/oauth2/config/AppProperties.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth2-gateway/target/classes/com/codecool/oauth2/config/SecurityConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth2-gateway/target/classes/com/codecool/oauth2/config/WebMcvConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth2-gateway/target/classes/com/codecool/oauth2/controller/AuthController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth2-gateway/target/classes/com/codecool/oauth2/controller/UserController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth2-gateway/target/classes/com/codecool/oauth2/controller/mainController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth2-gateway/target/classes/com/codecool/oauth2/exception/BadRequestException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth2-gateway/target/classes/com/codecool/oauth2/exception/OAuth2AuthenticationProcessingException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth2-gateway/target/classes/com/codecool/oauth2/exception/ResourceNotFoundException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth2-gateway/target/classes/com/codecool/oauth2/model/AuthProvider.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth2-gateway/target/classes/com/codecool/oauth2/model/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth2-gateway/target/classes/com/codecool/oauth2/payload/ApiResponse.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth2-gateway/target/classes/com/codecool/oauth2/payload/AuthResponse.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth2-gateway/target/classes/com/codecool/oauth2/payload/LoginRequest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth2-gateway/target/classes/com/codecool/oauth2/payload/SignUpRequest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth2-gateway/target/classes/com/codecool/oauth2/repositories/UserRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth2-gateway/target/classes/com/codecool/oauth2/security/CurrentUser.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth2-gateway/target/classes/com/codecool/oauth2/security/CustomUserDetailsService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth2-gateway/target/classes/com/codecool/oauth2/security/RestAuthenticationEntryPoint.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth2-gateway/target/classes/com/codecool/oauth2/security/TokenAuthenticationFilter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth2-gateway/target/classes/com/codecool/oauth2/security/TokenProvider.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth2-gateway/target/classes/com/codecool/oauth2/security/UserPrincipal.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth2-gateway/target/classes/com/codecool/oauth2/security/oauth2/CustomOAuth2UserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth2-gateway/target/classes/com/codecool/oauth2/security/oauth2/HttpCookieOAuth2AuthorizationRequestRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth2-gateway/target/classes/com/codecool/oauth2/security/oauth2/OAuth2AuthenticationFailureHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth2-gateway/target/classes/com/codecool/oauth2/security/oauth2/OAuth2AuthenticationSuccessHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth2-gateway/target/classes/com/codecool/oauth2/security/oauth2/user/GoogleOAuth2UserInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth2-gateway/target/classes/com/codecool/oauth2/security/oauth2/user/OAuth2UserInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth2-gateway/target/classes/com/codecool/oauth2/security/oauth2/user/OAuth2UserInfoFactory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth2-gateway/target/classes/com/codecool/oauth2/util/CookieUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth2-gateway/target/test-classes/com/codecool/oauth2/Oauth2ApplicationTests.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/java/com/codecool/apigateway/ApiGatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/codecool/apigateway/ApiGatewayApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/java/com/codecool/apigateway/model/AppUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/codecool/apigateway/model/AppUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/java/com/codecool/apigateway/security/CustomUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/codecool/apigateway/security/CustomUserDetailsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/java/com/codecool/apigateway/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/codecool/apigateway/security/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,8 +179,8 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/api-gateway/src/main/java/com/codecool/apigateway" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
@@ -138,7 +201,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.UserServiceApplication">
+  <component name="RunManager" selected="Spring Boot.Oauth2Application">
     <configuration name="ApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="api-gateway" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.codecool.apigateway.ApiGatewayApplication" />
@@ -149,6 +212,13 @@
     <configuration name="CompanyServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="company-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.codecool.companyservice.CompanyServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Oauth2Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="oauth2" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.codecool.oauth2.Oauth2Application" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -195,11 +265,6 @@
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
             </expand>
             <select />
           </treeState>
@@ -225,7 +290,12 @@
       <workItem from="1599041812712" duration="2719000" />
       <workItem from="1599130728915" duration="7156000" />
       <workItem from="1599208094576" duration="822000" />
-      <workItem from="1599472199120" duration="11077000" />
+      <workItem from="1599472199120" duration="12622000" />
+      <workItem from="1599571261371" duration="38000" />
+      <workItem from="1599643095567" duration="1029000" />
+      <workItem from="1599657282433" duration="697000" />
+      <workItem from="1599659722211" duration="16000" />
+      <workItem from="1599659758579" duration="264000" />
     </task>
     <task id="LOCAL-00001" summary="hello branch">
       <created>1596466758097</created>
@@ -346,7 +416,21 @@
       <option name="project" value="LOCAL" />
       <updated>1599480875251</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="sign in ask user from User Service">
+      <created>1599486165103</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1599486165103</updated>
+    </task>
+    <task id="LOCAL-00019" summary="sign in ask user from User Service">
+      <created>1599486201806</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1599486201806</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -369,7 +453,8 @@
     <MESSAGE value="get companies refactored" />
     <MESSAGE value="get Project" />
     <MESSAGE value="user-service added" />
-    <option name="LAST_COMMIT_MESSAGE" value="user-service added" />
+    <MESSAGE value="sign in ask user from User Service" />
+    <option name="LAST_COMMIT_MESSAGE" value="sign in ask user from User Service" />
   </component>
   <component name="WindowStateProjectService">
     <state x="283" y="23" key="#ProjectServicesApplication_(1)" timestamp="1596538835249">
@@ -384,13 +469,17 @@
       <screen x="0" y="23" width="1280" height="702" />
     </state>
     <state x="240" y="39" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.161.1920.1057/0.23.1280.702@0.23.1280.702" timestamp="1596624478100" />
-    <state x="208" y="23" key="CommitChangelistDialog2" timestamp="1599486164682">
+    <state x="362" y="235" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1599659963857">
+      <screen x="0" y="23" width="1280" height="702" />
+    </state>
+    <state x="362" y="235" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.23.1280.702@0.23.1280.702" timestamp="1599659963857" />
+    <state x="208" y="23" key="CommitChangelistDialog2" timestamp="1599486201406">
       <screen x="0" y="23" width="1280" height="702" />
     </state>
     <state x="-1608" y="161" key="CommitChangelistDialog2/-1920.161.1920.1057/0.23.1280.702@-1920.161.1920.1057" timestamp="1598967068686" />
-    <state x="208" y="23" key="CommitChangelistDialog2/-1920.161.1920.1057/0.23.1280.702@0.23.1280.702" timestamp="1599486164682" />
+    <state x="208" y="23" key="CommitChangelistDialog2/-1920.161.1920.1057/0.23.1280.702@0.23.1280.702" timestamp="1599486201406" />
     <state x="208" y="23" key="CommitChangelistDialog2/0.23.1280.702@0.23.1280.702" timestamp="1599140667538" />
-    <state width="948" height="214" key="GridCell.Tab.0.bottom" timestamp="1599485959662">
+    <state width="948" height="213" key="GridCell.Tab.0.bottom" timestamp="1599660052003">
       <screen x="0" y="23" width="1280" height="702" />
     </state>
     <state width="615" height="214" key="GridCell.Tab.0.bottom/-1920.138.1920.1080/0.0.1280.800@-1920.138.1920.1080" timestamp="1598357119741" />
@@ -399,9 +488,9 @@
     <state width="846" height="214" key="GridCell.Tab.0.bottom/-1920.138.1920.1080/0.23.1280.702@0.23.1280.702" timestamp="1598364174436" />
     <state width="615" height="214" key="GridCell.Tab.0.bottom/-1920.138.1920.1080/0.23.1280.777@-1920.138.1920.1080" timestamp="1598356589541" />
     <state width="846" height="214" key="GridCell.Tab.0.bottom/-1920.161.1920.1057/0.23.1280.702@-1920.161.1920.1057" timestamp="1599041872329" />
-    <state width="948" height="214" key="GridCell.Tab.0.bottom/-1920.161.1920.1057/0.23.1280.702@0.23.1280.702" timestamp="1599485959662" />
-    <state width="846" height="214" key="GridCell.Tab.0.bottom/0.23.1280.702@0.23.1280.702" timestamp="1599308236352" />
-    <state width="948" height="214" key="GridCell.Tab.0.center" timestamp="1599485959660">
+    <state width="948" height="214" key="GridCell.Tab.0.bottom/-1920.161.1920.1057/0.23.1280.702@0.23.1280.702" timestamp="1599487004592" />
+    <state width="948" height="213" key="GridCell.Tab.0.bottom/0.23.1280.702@0.23.1280.702" timestamp="1599660052003" />
+    <state width="948" height="213" key="GridCell.Tab.0.center" timestamp="1599660052002">
       <screen x="0" y="23" width="1280" height="702" />
     </state>
     <state width="615" height="214" key="GridCell.Tab.0.center/-1920.138.1920.1080/0.0.1280.800@-1920.138.1920.1080" timestamp="1598357119737" />
@@ -410,9 +499,9 @@
     <state width="846" height="214" key="GridCell.Tab.0.center/-1920.138.1920.1080/0.23.1280.702@0.23.1280.702" timestamp="1598364174433" />
     <state width="615" height="214" key="GridCell.Tab.0.center/-1920.138.1920.1080/0.23.1280.777@-1920.138.1920.1080" timestamp="1598356589537" />
     <state width="846" height="214" key="GridCell.Tab.0.center/-1920.161.1920.1057/0.23.1280.702@-1920.161.1920.1057" timestamp="1599041872327" />
-    <state width="948" height="214" key="GridCell.Tab.0.center/-1920.161.1920.1057/0.23.1280.702@0.23.1280.702" timestamp="1599485959660" />
-    <state width="846" height="214" key="GridCell.Tab.0.center/0.23.1280.702@0.23.1280.702" timestamp="1599308236351" />
-    <state width="948" height="214" key="GridCell.Tab.0.left" timestamp="1599485959660">
+    <state width="948" height="214" key="GridCell.Tab.0.center/-1920.161.1920.1057/0.23.1280.702@0.23.1280.702" timestamp="1599487004590" />
+    <state width="948" height="213" key="GridCell.Tab.0.center/0.23.1280.702@0.23.1280.702" timestamp="1599660052002" />
+    <state width="948" height="213" key="GridCell.Tab.0.left" timestamp="1599660052002">
       <screen x="0" y="23" width="1280" height="702" />
     </state>
     <state width="615" height="214" key="GridCell.Tab.0.left/-1920.138.1920.1080/0.0.1280.800@-1920.138.1920.1080" timestamp="1598357119734" />
@@ -421,9 +510,9 @@
     <state width="846" height="214" key="GridCell.Tab.0.left/-1920.138.1920.1080/0.23.1280.702@0.23.1280.702" timestamp="1598364174432" />
     <state width="615" height="214" key="GridCell.Tab.0.left/-1920.138.1920.1080/0.23.1280.777@-1920.138.1920.1080" timestamp="1598356589536" />
     <state width="846" height="214" key="GridCell.Tab.0.left/-1920.161.1920.1057/0.23.1280.702@-1920.161.1920.1057" timestamp="1599041872326" />
-    <state width="948" height="214" key="GridCell.Tab.0.left/-1920.161.1920.1057/0.23.1280.702@0.23.1280.702" timestamp="1599485959660" />
-    <state width="846" height="214" key="GridCell.Tab.0.left/0.23.1280.702@0.23.1280.702" timestamp="1599308236351" />
-    <state width="948" height="214" key="GridCell.Tab.0.right" timestamp="1599485959661">
+    <state width="948" height="214" key="GridCell.Tab.0.left/-1920.161.1920.1057/0.23.1280.702@0.23.1280.702" timestamp="1599487004589" />
+    <state width="948" height="213" key="GridCell.Tab.0.left/0.23.1280.702@0.23.1280.702" timestamp="1599660052002" />
+    <state width="948" height="213" key="GridCell.Tab.0.right" timestamp="1599660052003">
       <screen x="0" y="23" width="1280" height="702" />
     </state>
     <state width="615" height="214" key="GridCell.Tab.0.right/-1920.138.1920.1080/0.0.1280.800@-1920.138.1920.1080" timestamp="1598357119739" />
@@ -432,9 +521,9 @@
     <state width="846" height="214" key="GridCell.Tab.0.right/-1920.138.1920.1080/0.23.1280.702@0.23.1280.702" timestamp="1598364174435" />
     <state width="615" height="214" key="GridCell.Tab.0.right/-1920.138.1920.1080/0.23.1280.777@-1920.138.1920.1080" timestamp="1598356589539" />
     <state width="846" height="214" key="GridCell.Tab.0.right/-1920.161.1920.1057/0.23.1280.702@-1920.161.1920.1057" timestamp="1599041872328" />
-    <state width="948" height="214" key="GridCell.Tab.0.right/-1920.161.1920.1057/0.23.1280.702@0.23.1280.702" timestamp="1599485959661" />
-    <state width="846" height="214" key="GridCell.Tab.0.right/0.23.1280.702@0.23.1280.702" timestamp="1599308236352" />
-    <state width="948" height="214" key="GridCell.Tab.1.bottom" timestamp="1599485959664">
+    <state width="948" height="214" key="GridCell.Tab.0.right/-1920.161.1920.1057/0.23.1280.702@0.23.1280.702" timestamp="1599487004591" />
+    <state width="948" height="213" key="GridCell.Tab.0.right/0.23.1280.702@0.23.1280.702" timestamp="1599660052003" />
+    <state width="948" height="213" key="GridCell.Tab.1.bottom" timestamp="1599660052005">
       <screen x="0" y="23" width="1280" height="702" />
     </state>
     <state width="615" height="214" key="GridCell.Tab.1.bottom/-1920.138.1920.1080/0.0.1280.800@-1920.138.1920.1080" timestamp="1598357119749" />
@@ -443,9 +532,9 @@
     <state width="846" height="214" key="GridCell.Tab.1.bottom/-1920.138.1920.1080/0.23.1280.702@0.23.1280.702" timestamp="1598364174445" />
     <state width="615" height="214" key="GridCell.Tab.1.bottom/-1920.138.1920.1080/0.23.1280.777@-1920.138.1920.1080" timestamp="1598356589547" />
     <state width="846" height="214" key="GridCell.Tab.1.bottom/-1920.161.1920.1057/0.23.1280.702@-1920.161.1920.1057" timestamp="1599041872333" />
-    <state width="948" height="214" key="GridCell.Tab.1.bottom/-1920.161.1920.1057/0.23.1280.702@0.23.1280.702" timestamp="1599485959664" />
-    <state width="846" height="214" key="GridCell.Tab.1.bottom/0.23.1280.702@0.23.1280.702" timestamp="1599308236354" />
-    <state width="948" height="214" key="GridCell.Tab.1.center" timestamp="1599485959663">
+    <state width="948" height="214" key="GridCell.Tab.1.bottom/-1920.161.1920.1057/0.23.1280.702@0.23.1280.702" timestamp="1599487004595" />
+    <state width="948" height="213" key="GridCell.Tab.1.bottom/0.23.1280.702@0.23.1280.702" timestamp="1599660052005" />
+    <state width="948" height="213" key="GridCell.Tab.1.center" timestamp="1599660052004">
       <screen x="0" y="23" width="1280" height="702" />
     </state>
     <state width="615" height="214" key="GridCell.Tab.1.center/-1920.138.1920.1080/0.0.1280.800@-1920.138.1920.1080" timestamp="1598357119745" />
@@ -454,9 +543,9 @@
     <state width="846" height="214" key="GridCell.Tab.1.center/-1920.138.1920.1080/0.23.1280.702@0.23.1280.702" timestamp="1598364174442" />
     <state width="615" height="214" key="GridCell.Tab.1.center/-1920.138.1920.1080/0.23.1280.777@-1920.138.1920.1080" timestamp="1598356589544" />
     <state width="846" height="214" key="GridCell.Tab.1.center/-1920.161.1920.1057/0.23.1280.702@-1920.161.1920.1057" timestamp="1599041872331" />
-    <state width="948" height="214" key="GridCell.Tab.1.center/-1920.161.1920.1057/0.23.1280.702@0.23.1280.702" timestamp="1599485959663" />
-    <state width="846" height="214" key="GridCell.Tab.1.center/0.23.1280.702@0.23.1280.702" timestamp="1599308236353" />
-    <state width="948" height="214" key="GridCell.Tab.1.left" timestamp="1599485959663">
+    <state width="948" height="214" key="GridCell.Tab.1.center/-1920.161.1920.1057/0.23.1280.702@0.23.1280.702" timestamp="1599487004592" />
+    <state width="948" height="213" key="GridCell.Tab.1.center/0.23.1280.702@0.23.1280.702" timestamp="1599660052004" />
+    <state width="948" height="213" key="GridCell.Tab.1.left" timestamp="1599660052004">
       <screen x="0" y="23" width="1280" height="702" />
     </state>
     <state width="615" height="214" key="GridCell.Tab.1.left/-1920.138.1920.1080/0.0.1280.800@-1920.138.1920.1080" timestamp="1598357119743" />
@@ -465,9 +554,9 @@
     <state width="846" height="214" key="GridCell.Tab.1.left/-1920.138.1920.1080/0.23.1280.702@0.23.1280.702" timestamp="1598364174437" />
     <state width="615" height="214" key="GridCell.Tab.1.left/-1920.138.1920.1080/0.23.1280.777@-1920.138.1920.1080" timestamp="1598356589542" />
     <state width="846" height="214" key="GridCell.Tab.1.left/-1920.161.1920.1057/0.23.1280.702@-1920.161.1920.1057" timestamp="1599041872330" />
-    <state width="948" height="214" key="GridCell.Tab.1.left/-1920.161.1920.1057/0.23.1280.702@0.23.1280.702" timestamp="1599485959663" />
-    <state width="846" height="214" key="GridCell.Tab.1.left/0.23.1280.702@0.23.1280.702" timestamp="1599308236352" />
-    <state width="948" height="214" key="GridCell.Tab.1.right" timestamp="1599485959664">
+    <state width="948" height="214" key="GridCell.Tab.1.left/-1920.161.1920.1057/0.23.1280.702@0.23.1280.702" timestamp="1599487004592" />
+    <state width="948" height="213" key="GridCell.Tab.1.left/0.23.1280.702@0.23.1280.702" timestamp="1599660052004" />
+    <state width="948" height="213" key="GridCell.Tab.1.right" timestamp="1599660052004">
       <screen x="0" y="23" width="1280" height="702" />
     </state>
     <state width="615" height="214" key="GridCell.Tab.1.right/-1920.138.1920.1080/0.0.1280.800@-1920.138.1920.1080" timestamp="1598357119747" />
@@ -476,8 +565,8 @@
     <state width="846" height="214" key="GridCell.Tab.1.right/-1920.138.1920.1080/0.23.1280.702@0.23.1280.702" timestamp="1598364174444" />
     <state width="615" height="214" key="GridCell.Tab.1.right/-1920.138.1920.1080/0.23.1280.777@-1920.138.1920.1080" timestamp="1598356589546" />
     <state width="846" height="214" key="GridCell.Tab.1.right/-1920.161.1920.1057/0.23.1280.702@-1920.161.1920.1057" timestamp="1599041872332" />
-    <state width="948" height="214" key="GridCell.Tab.1.right/-1920.161.1920.1057/0.23.1280.702@0.23.1280.702" timestamp="1599485959664" />
-    <state width="846" height="214" key="GridCell.Tab.1.right/0.23.1280.702@0.23.1280.702" timestamp="1599308236353" />
+    <state width="948" height="214" key="GridCell.Tab.1.right/-1920.161.1920.1057/0.23.1280.702@0.23.1280.702" timestamp="1599487004594" />
+    <state width="948" height="213" key="GridCell.Tab.1.right/0.23.1280.702@0.23.1280.702" timestamp="1599660052004" />
     <state x="-1557" y="327" key="IDE.errors.dialog" timestamp="1598956241181">
       <screen x="-1920" y="161" width="1920" height="1057" />
     </state>
@@ -486,16 +575,17 @@
       <screen x="0" y="23" width="1280" height="702" />
     </state>
     <state x="178" y="36" key="Maven.ArtifactSearchDialog/-1920.161.1920.1057/0.23.1280.702@0.23.1280.702" timestamp="1596457060134" />
-    <state x="128" y="23" key="SettingsEditor" timestamp="1599480243975">
+    <state x="128" y="23" key="SettingsEditor" timestamp="1599659808689">
       <screen x="0" y="23" width="1280" height="702" />
     </state>
     <state x="128" y="0" key="SettingsEditor/-1920.138.1920.1080/0.0.1280.800@0.0.1280.800" timestamp="1596452950615" />
     <state x="128" y="23" key="SettingsEditor/-1920.161.1920.1057/0.23.1280.702@0.23.1280.702" timestamp="1599480243975" />
-    <state x="240" y="114" key="Vcs.Push.Dialog.v2" timestamp="1599140671486">
+    <state x="128" y="23" key="SettingsEditor/0.23.1280.702@0.23.1280.702" timestamp="1599659808689" />
+    <state x="240" y="114" key="Vcs.Push.Dialog.v2" timestamp="1599486203790">
       <screen x="0" y="23" width="1280" height="702" />
     </state>
     <state x="-1560" y="298" key="Vcs.Push.Dialog.v2/-1920.161.1920.1057/0.23.1280.702@-1920.161.1920.1057" timestamp="1598967071505" />
-    <state x="240" y="114" key="Vcs.Push.Dialog.v2/-1920.161.1920.1057/0.23.1280.702@0.23.1280.702" timestamp="1598366567315" />
+    <state x="240" y="114" key="Vcs.Push.Dialog.v2/-1920.161.1920.1057/0.23.1280.702@0.23.1280.702" timestamp="1599486203790" />
     <state x="240" y="114" key="Vcs.Push.Dialog.v2/0.23.1280.702@0.23.1280.702" timestamp="1599140671486" />
     <state x="545" y="276" width="326" height="220" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1596637521446">
       <screen x="0" y="23" width="1280" height="702" />
